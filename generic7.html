@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>COMMUTING CITY</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<a href="index4.html" class="logo">
+							</span><span class="title">Urban Analytics</span>
+						</a>
+						<style>
+							a {font: 15px 'geogia', Times, serif; color: #d6d6d6}
+						  </style>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+							<!-- Menu -->
+							<nav id="menu">
+								<h2>Menu</h2>
+								<br>
+								<ul>
+									<li><a href="index.html">Overview</a></li>
+									<li><a href="index2.html">Urban Design</a></li>
+									<li><a href="index3.html">Urban and Rural Planning</a></li>
+									<li><a href="index4.html">Urban Analytics</a></li>
+									<li><a href="index5.html">About Me</a></li>
+						
+								</ul>
+								<style>
+									ul {font-size: 16px;
+									   font-family: 'geogia', Times, serif}
+									h2 {font-size: 18px;
+									   font-family: 'geogia', Times, serif}	
+												
+								  </style>
+							</nav>
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Exploring Liverpool Commuting Patterns and Push-And-Pull Variables </h1>
+							<t1>Summer 22' | Applied GIS Report | Coursework Assignment  |  Liverpool, UK</t1>
+						</t1><br><br><p2>1. Introduction</h1><br>
+						<p>The dominant monocentric urban networks of British cities have been criticised as inefficient due to excessive commuting time and congestion costs (Gordon et al., 1989). An adaptable transformation to polycentric forms requires deeper understanding of intra-city labour markets and commuting patterns, yet empirical studies mainly focus on macro-scale spatial interaction models (Nielsen & Hovgesen, 2008). Attempting to enlighten municipal-level transport planning, this report will determine origin-destination flow patterns in Liverpool and their push-and-pull factors through GIS and statistical analysis.</p>													
+
+							</p>
+							<br><p2>2. Methodology</h1><br>
+							<p>Firstly, Liverpool travel-to-work mode is explored based on a combination of inter-MSOA commuter flow data and 2011 Census data. Then, the Poisson regression analysis is undertaken to predict the relations between the commuting scale and explanatory variables, which measure socio-economic and geodemographic characteristics of the workforce, including economic activity (unemployed/self-employed/full-time), age and gender (Sen, et al., 2021), and workplace-based factors such as job availability (McLafferty & Preston, 2010) and transport methods (Dargay & Hanly, 2007). Lastly, spatial autocorrelation tests will be applied to each factor to identify clustering effects.</p>
+							</p>
+
+								<br><p2>3. Results</h1><br>
+										<p3>Stage 1: GIS analysis</h1>	
+											<p>Journeys-to-work in Liverpool demonstrates typical monocentric characteristics in which commute size declines radially as distance from the CBD increases (Figure 1). Although the Port Area and John Lennon Airport are two major employment centres that occupy the largest space and accommodate 25% of total inter-MSOA commuters, the former obtains three times the latter in the Top 100 flows. Job-housing separation under such an agglomeration pattern might cause the inner ring – the main residence of commuters – to be worst hit by metropolitan congestion (Figure 2; Weitz, 2003).
+												The commute distance differs between social groups. Short-distance commutes to the city centre are concentrated in areas with more unemployment, while self-employed workers with flexible work schedule prefer to live farther from jobs (Shin, 2019; Figure 3). Long-distance commutes appear to be particular popular among middle-aged full-time male employees, whose distribution coincides with the biggest flows originating from the Eastern suburbs (Figure 4).</p>
+											
+												<span class="image main"><img src= "images/pic51.jpg" alt="" /></span>
+												<span class="image main"><img src= "images/pic52.jpg" alt="" /></span>
+												<span class="image main"><img src= "images/pic53.jpg" alt="" /></span>
+												<span class="image main"><img src= "images/pic54.jpg" alt="" /></span>
+											</p>
+										<br><p3>Stage 2: Poisson regression analysis</h1>	
+											<p>Distance and job availability are two predominant push-and-pull factors, regardless of the changes in variables or thresholds. Car-travel mode has a positive correlation with the commuting scale but decreases as the threshold rises, whereas the unemployment rate becomes a pull factor for the top 50 flows. This could be explained by higher employment density in the city centre (where the greatest flows agglomerate) that helps support transit connection, which reduce the frequency of car journeys (Ding et al., 2017) and satisfying deprived communities' reliance on public transport services (Patterson et al., 2020).
+												<p>The decreasing AIC values demonstrate the model’s improving explanatory power, but the threshold of Model 6c seems too high and causes economic activity factors to lose significance. The strongest spatial clustering with the highest significance is observed among middle-aged full-time male employees. Most factors manifest a modest level of spatial autocorrelation.</p>
+											<span class="image main"><img src= "images/pic55.jpg" alt="" /></span>
+											<span class="image main"><img src= "images/pic56.jpg" alt="" /></span>
+											<span class="image main"><img src= "images/pic57.jpg" alt="" /></span>	
+												</p>
+														</p>
+												<br><p2>4. Discussion and Conclusion</h1><br>
+													<p>This report investigates Liverpool’s monocentric commuting paradigm. Although economic agglomeration provides a city-wide workforce with easy radial movements, a more balanced job–housing relationship needs to be considered for to minimise commute costs. However, the whole analysis dependent on MSOA can result in modifiable unit problems (Figure 5), and generalising individual conditions with aggregate data might result in ecological fallacies.</p>
+													<span class="image main"><img src= "images/pic58.jpg" alt="" /></span>
+													<span class="image main"><img src= "images/pic59.jpg" alt="" /></span>	
+																						<br><p2>Reference</h1><br>
+																							<p>Dargay, J. & Hanly, M. (2007) Volatility of car ownership, commuting mode and time in the UK, Transportation Research Part A: Policy and Practice, 41 (10), pp. 934-948, DOI: 10.1016/j.tra.2007.05.003.
+																								<p>Ding, C., Wang, D., Liu, C., Zhang, Y. & Yang, J. (2017) Exploring the influence of built environment on travel mode choice considering the mediating effects of car ownership and travel distance, Transportation Research Part A: Policy and Practice, 100, pp. 65-80. DOI: 10.1016/j.tra.2017.04.008.
+																									<p>Gordon, P., Kumar, A. & Richardson, W. R. (1989) The Influence of Metropolitan Spatial Structure on Commuting Time, Journal of Urban Economics, 26, pp. 138-151. DOI: 10.1016/0094-1190(89)90013-2
+																										<p>McLafferty, S. & Preston, V. (1991) Gender, Race, And Commuting Among Service Sector Workers, The Professional Geographer, 43 (1), pp. 1-15, DOI: 10.1111/j.0033-0124.1991.00001.x
+																											<p>Nielsen, T. A. S & Hovgesen, H. H. (2008) ‘Exploratory mapping of commuter flows in England and Wales’, Journal of Transport Geography, 16 (2), pp. 90-99. DOI: 10.1016/j.jtrangeo.2007.04.005
+																												<p>NOMIS (2014) Population (Workplace population) [Dataset]. Available from:
+																							https://www.nomisweb.co.uk/census/2011/wp101ew (Accessed: 28 March 2022)
+																								<p>Research Agency (2017). 2011 Census aggregate data. UK Data Service (Edition: February 2017).
+																							[Online] Available from: http://dx.doi.org/10.5257/census/aggregate-2011-2 (Accessed: 28 March
+																							2022).
+																							<p>Patterson, R., Panter, J., Vamos, E. P., Cummins, S., Millett, C., Laverty, A. A. (2020) Associations between commute mode and cardiovascular disease, cancer, and all-cause mortality, and cancer incidence, using linked Census data over 25 years in England and Wales: a cohort study, The Lancet Planetary Health, 4 (5), pp. 186-194, DOI:10.1016/S2542-5196(20)30079-6.
+																							<p>Sen, S., Charles, M. B. & Harrison, J. L. (2021) Determinants of Commute Distance in South East Queensland, Australia: Implications for Usage-based Pricing in Lower-density Urban Settings, Urban Policy and Research, 39 (3), pp. 292-307, DOI: 10.1080/08111146.2021.1922376
+																							<p>Shin, E, J. (2019) Self-employment and travel behavior: A case study of workers in central Puget Sound, Transport Policy, 73, pp. 101-112. DOI: 10.1016/j.tranpol.2018.11.002
+																							<p>Weitz, J. (2003) Jobs–housing balance (Report No. 516). Chicago, IL: The American Planning Association.
+																							<p>Yongwan Chun & Daniel A. Griffith (2011) Modeling Network Autocorrelation in Space–Time Migration Flow Data: An Eigenvector Spatial Filtering Approach, Annals of the Association of American Geographers, 101:3, 523-536, DOI: 10.1080/00045608.2011.561070																																
+																							
+																													</div>																						
+						<style>
+						h1 {font-size: 30px;
+							font-family: Garamond}
+						p2 {font: 20px 'geogia', Times, serif}
+						p2 {font-weight:bold}
+						p2 {font-style: italic}
+						p3 {font: 13px 'Merriweather', Times, serif}
+						p3 {font-weight:bold}	
+						p3 {font-style: italic}
+						p4 {font: 10px 'Merriweather', Times, serif}
+						t1 {font-size: 12px;
+							   font-family: 'Merriweather', Times, serif}	
+						p {font: 13px 'Merriweather', Times, serif; font-weight: 100; line-height: 2; color: #848484}	
+					
+						div {max-width: 900px; margin: auto}
+						</style>
+					</div>
+
+		
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<section>
+						<h2>Get in touch</h2>
+						<p>Email: wtian@gsd.harvard.edu/sgwtian2@liverpool.ac.uk
+							<br>
+							<p>Phone: +86 15850066887/+44 7355274470
+								<br><br>
+							</section>
+				
+				
+				
+				</div>
+			</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
